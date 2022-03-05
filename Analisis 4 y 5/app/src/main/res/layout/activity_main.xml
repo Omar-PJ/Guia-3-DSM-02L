@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="130dp">
+
+        <Button
+            android:id="@+id/btnFrame"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="122dp"
+            android:layout_marginLeft="122dp"
+            android:layout_marginTop="175dp"
+            android:onClick="onClickFrame"
+            android:text="Frame Layout"
+            app:layout_constraintStart_toStartOf="@+id/btnRelative"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnLinear"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="122dp"
+            android:layout_marginLeft="122dp"
+            android:layout_marginTop="263dp"
+            android:onClick="onClickLinear"
+            android:text="Linear Layout"
+            app:layout_constraintStart_toStartOf="@+id/btnFrame"
+            app:layout_constraintTop_toBottomOf="@+id/btnFrame" />
+
+        <Button
+            android:id="@+id/btnRelative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="122dp"
+            android:layout_marginLeft="122dp"
+            android:layout_marginTop="350dp"
+            android:onClick="onClickRelative"
+            android:text="Relative Layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLinear" />
+
+        <Button
+            android:id="@+id/btnTable"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="122dp"
+            android:layout_marginLeft="122dp"
+            android:layout_marginTop="431dp"
+            android:onClick="onClickTable"
+            android:text="Table Layout"
+            app:layout_constraintEnd_toEndOf="@+id/btnRelative"
+            app:layout_constraintTop_toBottomOf="@+id/btnRelative" />
+
+        <Button
+            android:id="@+id/btnGrid"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="122dp"
+            android:layout_marginLeft="122dp"
+            android:layout_marginTop="524dp"
+            android:onClick="onClickGrid"
+            android:text="Grid Layout"
+            app:layout_constraintStart_toStartOf="@+id/btnTable"
+            app:layout_constraintTop_toBottomOf="@+id/btnTable" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="179dp"
+            android:layout_marginLeft="179dp"
+            android:layout_marginTop="101dp"
+            android:text="MENU"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
